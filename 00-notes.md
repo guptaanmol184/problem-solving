@@ -26,3 +26,9 @@ S: Finding highest peak after smallest valley
 2. max_profit is calculated for each variable by assuming the current value as maximum and checking profit with min_price
 T: O(n) | O(1)
 
+## 3. Merge Sorted Array
+P: Given 2 sorted arrays, 1 length m+n one length n, and m and n. Merge them in place in the m+n so that output is sorted.
+S: 3 pointers - nums1_ptr, nums2_ptr, insert_ptr
+1. Compare values from nums1 and nums2, pick largest
+2. Insert into insert_ptr location at nums1 array
+3. Keep doing until nums2 is empty
