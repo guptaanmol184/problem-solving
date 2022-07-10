@@ -32,3 +32,12 @@ S: 3 pointers - nums1_ptr, nums2_ptr, insert_ptr
 1. Compare values from nums1 and nums2, pick largest
 2. Insert into insert_ptr location at nums1 array
 3. Keep doing until nums2 is empty
+
+## 283 Move Zeros
+P: Given an array of numbers, move all the zeros to the end of the array while keeping the relative ordering of other numbers as is
+S: 2 pointers - num tracking and traversing
+1. Traverse through the array
+2. If the val at index is not zero, increment the num tracking and swap it with val at the index.
+3. If the value at index is zero, proceed to next index.
+
+Coagulates and moves zeros to the end
