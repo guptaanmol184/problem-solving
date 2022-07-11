@@ -72,3 +72,8 @@ T: O(n) | S: O(1)
 P: Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 S: Traverse the array, picking one number at a time from the nums array. Adding a new element to the running_sums array as sum of the last appended running_sums array value and the nums value at the current index.
 T: O(n) | S: O(1) -> can be done in place
+
+## 7. Find Pivot Index (724)
+P: Given an array of integers nums, calculate the pivot index of this array.  The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
+S: Calculate sum of array once. Keep track of left sum as you traverse through the array. Right sum = Total - leftsum - current_val. Use this to check if right_sum == left_sum.
+T: O(n) | S: O(1)
