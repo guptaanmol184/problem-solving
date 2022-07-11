@@ -36,7 +36,7 @@ S: 3 pointers - nums1_ptr, nums2_ptr, insert_ptr
 2. Insert into insert_ptr location at nums1 array
 3. Keep doing until nums2 is empty
 
-## 283 Move Zeros
+## 4. Move Zeros (283)
 P: Given an array of numbers, move all the zeros to the end of the array while keeping the relative ordering of other numbers as is
 
 S: 2 pointers - num tracking and traversing
@@ -46,7 +46,7 @@ S: 2 pointers - num tracking and traversing
 
 Coagulates and moves zeros to the end
 
-## 122 Buy and Sell Stock II
+## 5. Buy and Sell Stock II (122)
 P: Given a array of daily prices, find the max profit you can make by buying and selling the stock multiple times.
 
 S: Brute Force
@@ -67,3 +67,8 @@ Looking at peak and valley approach, in a valley-peak combo,
     total profit = profit from each consecutive profitable pair
 Traverse the array, adding up profit from each consecutive pair of profitable trade.
 T: O(n) | S: O(1)
+
+## 6. Running sum of 1D Array (1480)
+P: Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+S: Traverse the array, picking one number at a time from the nums array. Adding a new element to the running_sums array as sum of the last appended running_sums array value and the nums value at the current index.
+T: O(n) | S: O(1) -> can be done in place
