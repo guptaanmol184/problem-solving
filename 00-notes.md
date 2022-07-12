@@ -69,11 +69,33 @@ Traverse the array, adding up profit from each consecutive pair of profitable tr
 T: O(n) | S: O(1)
 
 ## 6. Running sum of 1D Array (1480)
+Monday (11/07)
 P: Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 S: Traverse the array, picking one number at a time from the nums array. Adding a new element to the running_sums array as sum of the last appended running_sums array value and the nums value at the current index.
 T: O(n) | S: O(1) -> can be done in place
 
 ## 7. Find Pivot Index (724)
+Monday (11/07)
 P: Given an array of integers nums, calculate the pivot index of this array.  The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
 S: Calculate sum of array once. Keep track of left sum as you traverse through the array. Right sum = Total - leftsum - current_val. Use this to check if right_sum == left_sum.
+T: O(n) | S: O(1)
+
+## 8. Majority Element
+Tuesday (12/07)
+P: Given an array nums of size n, return the majority element.
+
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+S: Hash map approach
+T: O(n) | S: O(n)
+
+S: Sorting approach
+Sort elements are return the element at ⌊n / 2⌋ index
+T: O(nlogn) | S: O(1)
+
+S: Boyer Moore Voting approach
+Assume the first element to be the candidate. Count +1 for every reoccurance of candidate, and -1 for any other number.
+If the count reaches 0, throw the prefix. This can be safely done because we whenever we are throwing away we can ensure that we are throwing at most equal number of majority elements as the minority elements.
+Finally we will be left with such a suffix that has the real majority element.
+This process ensures that the actual (global majority) remains the actual majoriy element in the suffix after throwing away the prefix.
 T: O(n) | S: O(1)
