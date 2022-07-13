@@ -110,3 +110,11 @@ Wednesday (13/07)
 P: Given an array sorted in ascending order, return an array with all elements squared and sorted in ascending order. NOTE: Array may contain negative integers.
 S: Note that with negative integers sorted in ascending order. The number with the biggest sqaure will be at the beginning and as we go towards zero sqaure value will reduced. Now, from 0 again squares will increase and towards the end, the sequares will be highest. This let's us use 2 pointers to compare and pick the biggest number to sqaure from the starting and end end. Repeat this shifting the 2 pointers and add it to the result array.
 T: O(n) | S(n)
+
+## 118 Pascals Triangle
+Wednesday (13/07)
+P:Given n, return the first n rows of the pascals triangle
+S: Iterate over n, add rows with rows[i][j] = rows[i-1][j] + rows[i-1][j-1]
+Note for every row first and last element is 0
+Note for every row, we already know the space needed, allocate it at once.
+T: O(n^2) | S(n^2)
