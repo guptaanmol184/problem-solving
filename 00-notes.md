@@ -104,3 +104,9 @@ T: O(n) | S: O(1)
 Wednesday (13/07)
 P: Given n, return the nth fibonacci number
 S: Use f(n) = f(n-1) + f(n-2) iteratively. f(0) = 0, f(1) = 1
+
+## 977 Squares of a sorted array
+Wednesday (13/07)
+P: Given an array sorted in ascending order, return an array with all elements squared and sorted in ascending order. NOTE: Array may contain negative integers.
+S: Note that with negative integers sorted in ascending order. The number with the biggest sqaure will be at the beginning and as we go towards zero sqaure value will reduced. Now, from 0 again squares will increase and towards the end, the sequares will be highest. This let's us use 2 pointers to compare and pick the biggest number to sqaure from the starting and end end. Repeat this shifting the 2 pointers and add it to the result array.
+T: O(n) | S(n)
