@@ -118,3 +118,10 @@ S: Iterate over n, add rows with rows[i][j] = rows[i-1][j] + rows[i-1][j-1]
 Note for every row first and last element is 0
 Note for every row, we already know the space needed, allocate it at once.
 T: O(n^2) | S(n^2)
+
+## 26 Remove Duplicates from Sorted Array
+Wednesday (13/07)
+P: Given array nums sorted in non-decreeing order. Remove Duplicates in the array in place, keeping the order. Return number of unique elements in the array.
+S: 2 pointers, insert_ptr and traverse_ptr
+If the current traverse_ptr value is different from it's previous, insert value in insert_ptr location and increment insert_ptr.
+T: O(n) | S: O(1)
