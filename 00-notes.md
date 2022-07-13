@@ -94,8 +94,13 @@ Sort elements are return the element at ⌊n / 2⌋ index
 T: O(nlogn) | S: O(1)
 
 S: Boyer Moore Voting approach
-Assume the first element to be the candidate. Count +1 for every reoccurance of candidate, and -1 for any other number.
+Assume the first element to be the candidate. Count +1 for every reoccurrence of candidate, and -1 for any other number.
 If the count reaches 0, throw the prefix. This can be safely done because we whenever we are throwing away we can ensure that we are throwing at most equal number of majority elements as the minority elements.
 Finally we will be left with such a suffix that has the real majority element.
-This process ensures that the actual (global majority) remains the actual majoriy element in the suffix after throwing away the prefix.
+This process ensures that the actual (global majority) remains the actual majority element in the suffix after throwing away the prefix.
 T: O(n) | S: O(1)
+
+## 9. Fibonacci Number
+Wednesday (13/07)
+P: Given n, return the nth fibonacci number
+S: Use f(n) = f(n-1) + f(n-2) iteratively. f(0) = 0, f(1) = 1
