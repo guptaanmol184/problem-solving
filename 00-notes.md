@@ -125,3 +125,18 @@ P: Given array nums sorted in non-decreeing order. Remove Duplicates in the arra
 S: 2 pointers, insert_ptr and traverse_ptr
 If the current traverse_ptr value is different from it's previous, insert value in insert_ptr location and increment insert_ptr.
 T: O(n) | S: O(1)
+
+## 56 Merge Intervals
+Thursday (14/07)
+P: Given an array of intervals where intervals[i] = [start, end], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+- Find condition for merging two intervals. ie. a, b and c, d merge if c <= b
+S: Do this for all elements and make the biggest merges without sorting and update the array
+T: O(n^2) | S: O(n)
+
+S: Sort the input using the start elements as keys
+For each element check all the other elements and merge.
+T: O(n^2) | S: O(n)
+
+S: Sort the input using the start elements as keys
+For each consecutive element, merge it with the previous element if merge is possible else, add this as a new element in the output. This uses the face that we have sorted the array using the start elements and overlaps can only be consecutive elements. If, consecutive elements don't overlap, it's a new interval.
+T: O(nlogn) | S: O(n)
