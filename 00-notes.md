@@ -206,3 +206,10 @@ P: Given a string with only '[', '{', '(', find if it is valid and all parenthes
 S: Using stack
 Use stack to add open parens. On seeing closing paren, verify with top of stack. If success, continue. Else invalid. Valid if stack remains empty in the end.
 T: O(n) | S: O(n)
+
+## 704 Binary search
+Friday (15/07)
+P: Given array sorted in ascending order and a target. Return index if present, else -1.
+
+S: Apply binary search
+T: O(logn) | S: O(1)
