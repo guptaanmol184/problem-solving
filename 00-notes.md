@@ -186,3 +186,14 @@ T: O(s+t) | S: O(s+t)
 
 S: Sorting
 T: O(nlogn) | S: O(1)
+
+## 125 Valid Palindrome
+Friday (15/07)
+P: Given a string, check if it's a palindrome. Note only alpha numeric characters should be considered for palindrome check
+
+S: Remove all non alphanumeric chracters. Reverse string. Check.
+T: O(n) | S: O(n)
+
+S: 2 pointers
+Use 2 pointers for traversing both ends. Use while and bound check loop to skip non alpha num characters.
+T: O(n) | S: O(1)
