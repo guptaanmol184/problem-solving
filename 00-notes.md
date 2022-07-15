@@ -165,3 +165,15 @@ For each element considered as the starting element. Check sum needed to get tar
 And use 2 sum approach  (ie. 2 pointers) to find the target element in the left over array.
 Apply similar logic as starting element duplicate skip for the 2 sum also.
 T: O(nlogn) + O(n^2) = O(n^2) | S: O(1)
+
+## 217 Contains Duplicates
+Friday (15/07)
+P: Given an array, return true if it contains duplicates else return false
+S: Brute force
+T: O(n^2) | S: O(1)
+
+S: Sorting and traversal
+T: O(nlogn) | S: O(1)
+
+S: Hashmap
+T: O(n) | S: O(n)
