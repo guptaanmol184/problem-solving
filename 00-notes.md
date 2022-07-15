@@ -197,3 +197,12 @@ T: O(n) | S: O(n)
 S: 2 pointers
 Use 2 pointers for traversing both ends. Use while and bound check loop to skip non alpha num characters.
 T: O(n) | S: O(1)
+
+## 20 Valid Parentheses
+Friday (15/07)
+
+P: Given a string with only '[', '{', '(', find if it is valid and all parentheses match up
+
+S: Using stack
+Use stack to add open parens. On seeing closing paren, verify with top of stack. If success, continue. Else invalid. Valid if stack remains empty in the end.
+T: O(n) | S: O(n)
