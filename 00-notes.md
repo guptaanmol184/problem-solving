@@ -140,3 +140,19 @@ T: O(n^2) | S: O(n)
 S: Sort the input using the start elements as keys
 For each consecutive element, merge it with the previous element if merge is possible else, add this as a new element in the output. This uses the face that we have sorted the array using the start elements and overlaps can only be consecutive elements. If, consecutive elements don't overlap, it's a new interval.
 T: O(nlogn) | S: O(n)
+
+## 167 Two Sum 2
+Friday (15/07)
+P: Given a sorted array and a target, find if the array contains the target
+
+S: Refer to Two sum solutions above as they already apply
+
+S: Binary search
+Since array is sorted, we can binary search. 
+For loop for picking first element.
+Use binary search in the rest of array to find the element.
+T: O(nlogn) | S: O(1)
+
+S: Two pointers
+Since the array is sorted, we can use 2 pointers from starting and end. If the sum is more than expected value, we move the lower end pointer. If the sum is more than expected value, we move the higher end pointer.
+T: O(n)| S: O(n)
