@@ -177,3 +177,12 @@ T: O(nlogn) | S: O(1)
 
 S: Hashmap
 T: O(n) | S: O(n)
+
+## 242 Valid Anagram
+Friday (15/07)
+P: Given two strings, return `true` if they are anagrams else `false`
+S: Create 2 hash maps to for each string and compare them for ensuring, same length, same character set, and same cont for character
+T: O(s+t) | S: O(s+t)
+
+S: Sorting
+T: O(nlogn) | S: O(1)
