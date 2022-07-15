@@ -156,3 +156,12 @@ T: O(nlogn) | S: O(1)
 S: Two pointers
 Since the array is sorted, we can use 2 pointers from starting and end. If the sum is more than expected value, we move the lower end pointer. If the sum is more than expected value, we move the higher end pointer.
 T: O(n)| S: O(n)
+
+## 15 3 Sum
+Friday (15/07)
+P: Given an array and a target, find unique triplets which sum to the given target (eg. 0)
+S: Sort the array to know that if you are starting with the same element, then you should skip to avoid duplicates.
+For each element considered as the starting element. Check sum needed to get target.
+And use 2 sum approach  (ie. 2 pointers) to find the target element in the left over array.
+Apply similar logic as starting element duplicate skip for the 2 sum also.
+T: O(nlogn) + O(n^2) = O(n^2) | S: O(1)
