@@ -213,3 +213,15 @@ P: Given array sorted in ascending order and a target. Return index if present, 
 
 S: Apply binary search
 T: O(logn) | S: O(1)
+
+## 206 Reverse Linked List
+Friday (15/07)
+P: Given a linked list, reverse the list.
+
+S: Traverse through the list tracking prev and current nodes. Use a temp variable to store current.next before setting current.next = prev.
+Finally set head.next = None
+T: O(n) | S: O(1)
+
+S: Recursive approach
+Keeping two values in memory, recursively keeping them so that you can remember the prev and current even when breaking the link.
+T: O(n) | S: O(n) - recursion
