@@ -215,7 +215,7 @@ S: Apply binary search
 T: O(logn) | S: O(1)
 
 ## 206 Reverse Linked List
-Friday (15/07)
+Saturday (16/07)
 P: Given a linked list, reverse the list.
 
 S: Traverse through the list tracking prev and current nodes. Use a temp variable to store current.next before setting current.next = prev.
@@ -225,3 +225,11 @@ T: O(n) | S: O(1)
 S: Recursive approach
 Keeping two values in memory, recursively keeping them so that you can remember the prev and current even when breaking the link.
 T: O(n) | S: O(n) - recursion
+
+## 21 Mere two sorted lists
+Sunday (17/07)
+P: Given 2 sorted linked lists merge them.
+
+S: Use 2 pointers, 2 to traverse the individual linked lists, and 1 to keep track of the last element in the merged list, where new elements are added.
+- * Use a dummy Node without value for the start, and then return dummy.next - neetcode
+T: O(n) | S: O(1)
