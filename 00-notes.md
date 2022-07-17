@@ -233,3 +233,16 @@ P: Given 2 sorted linked lists merge them.
 S: Use 2 pointers, 2 to traverse the individual linked lists, and 1 to keep track of the last element in the merged list, where new elements are added.
 - * Use a dummy Node without value for the start, and then return dummy.next - neetcode
 T: O(n) | S: O(1)
+
+## 226 Invert Binary Tree
+Sunday (17/07)
+P: Given a binary tree, invert the nodes
+
+S: Recursive, for each node, invert the children and recursively call invert on the left and right node
+T: O(n) | S: O(n) - stack
+
+S: DFS
+T: O(n) | S: O(n)
+
+S: BFS
+T: O(n) | S: O(n)
