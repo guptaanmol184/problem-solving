@@ -246,3 +246,16 @@ T: O(n) | S: O(n)
 
 S: BFS
 T: O(n) | S: O(n)
+
+## 104 maximum depth of a binary tree
+Monday (18/07)
+P: Given a binary tree, find it's maximum depth
+
+S: Recursive, dfs, using stack
+T: O(n) | S: O(n)
+
+S: BFS using queue
+T: O(n) | S: O(n)
+
+S: Iterative DFS using stack
+T: O(n) | S: O(n)
