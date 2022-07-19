@@ -271,3 +271,15 @@ So, compute the dfs to find the height of the left and right subtrees, while com
 1 - None node is height -1, dia = left_h + right_h + 2
 2 - None node is height 0, dia = left_h + right_h. Accounts for parents edge, looks simpler.
 T: O(n)| S: O(n) - stack
+
+## 110 Balanced Binary Tree
+Monday (18/07)
+P: Given a binary tree, determine if it is height-balanced.
+For this problem, a height-balanced binary tree is defined as:
+    a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+
+S:
+- To calculate the if a tree is balanced we need height of left and right subtrees
+- Do DFS and calculate the height of subtrees bottom up, this allows root getting to know it's height and if it's balanced based on subtrees height and balanced.
+- Track height and balanced status during the dfs recursively
+T: O(n)| S: O(1)
