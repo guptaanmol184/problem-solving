@@ -259,3 +259,15 @@ T: O(n) | S: O(n)
 
 S: Iterative DFS using stack
 T: O(n) | S: O(n)
+
+## 543 Diameter of binary tree
+Monday (18/07)
+P: Given the root of a binary tree, return the length of the diameter of the tree.
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+The length of a path between two nodes is represented by the number of edges between them.
+
+S: Recursion, DFS:
+So, compute the dfs to find the height of the left and right subtrees, while computing also keep looking for diameter. Update max diameter.
+1 - None node is height -1, dia = left_h + right_h + 2
+2 - None node is height 0, dia = left_h + right_h. Accounts for parents edge, looks simpler.
+T: O(n)| S: O(n) - stack
