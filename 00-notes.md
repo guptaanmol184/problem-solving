@@ -282,4 +282,12 @@ S:
 - To calculate the if a tree is balanced we need height of left and right subtrees
 - Do DFS and calculate the height of subtrees bottom up, this allows root getting to know it's height and if it's balanced based on subtrees height and balanced.
 - Track height and balanced status during the dfs recursively
-T: O(n)| S: O(1)
+T: O(n)| S: O(n) -stack
+
+## 100 Same tree
+P: Given 2 binary tree's. Identify if they are same. Same implies their values and structure are same.
+
+S: DFS and compare nodes.
+- Recursive: super easy
+- Iterative: Slightly more implementation. Stack comes into picture instead of call stack
+T: O(n)| S: O(n)
