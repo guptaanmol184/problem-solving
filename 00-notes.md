@@ -285,9 +285,20 @@ S:
 T: O(n)| S: O(n) -stack
 
 ## 100 Same tree
+Tuesday (19/07)
 P: Given 2 binary tree's. Identify if they are same. Same implies their values and structure are same.
 
 S: DFS and compare nodes.
 - Recursive: super easy
 - Iterative: Slightly more implementation. Stack comes into picture instead of call stack
 T: O(n)| S: O(n)
+
+## 572 Subtree Of Another Tree
+Tuesday (19/07)
+P: Given a tree and a another tree. Determine if the another tree is a sub tree of the given tree.
+
+S: 
+- DFS on the tree, using the above Same Tree to check if the tree is a subtree of the given tree
+n - size of tree
+m - size of another tree
+T: O(n * m)| S: O(n + m) approx space - stack
