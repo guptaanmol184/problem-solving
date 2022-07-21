@@ -302,3 +302,17 @@ S:
 n - size of tree
 m - size of another tree
 T: O(n * m)| S: O(n + m) approx space - stack
+
+## 235 Lowest Common Ancestor Of A Binary Search Tree
+Tuesday (19/07)
+P: Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
+
+S:
+- Use post order traversal, evaluate if q and p are found in the left and right sub trees. Then evaluate if the value is found in the root.
+- Return when value found in the root
+T: O(n) | S: O(n)
+
+S: Use BST property and check the current node value with p and q values
+T: O(logn) | S: O(1)
