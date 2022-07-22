@@ -294,7 +294,7 @@ S: DFS and compare nodes.
 T: O(n)| S: O(n)
 
 ## 572 Subtree Of Another Tree
-Tuesday (19/07)
+Wednesday (20/07)
 P: Given a tree and a another tree. Determine if the another tree is a sub tree of the given tree.
 
 S: 
@@ -304,7 +304,7 @@ m - size of another tree
 T: O(n * m)| S: O(n + m) approx space - stack
 
 ## 235 Lowest Common Ancestor Of A Binary Search Tree
-Tuesday (19/07)
+Thursday (21/07)
 P: Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
@@ -316,3 +316,22 @@ T: O(n) | S: O(n)
 
 S: Use BST property and check the current node value with p and q values
 T: O(logn) | S: O(1)
+
+## 703 Kth Largest Element In A Stream
+Friday (22/07)
+P: Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Implement KthLargest class:
+
+KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
+int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.
+
+S:
+Using a minheap of size k, since we wan't the kth largest element and only would need to track the k largest elements at any point in the stream
+
+Construction: O(nlogn) because creating heap from array (heapify) is O(n). But, then popping elements until size is k is k * O(logn). ie. total O(nlogn)
+
+Add: Since we are inserting and removing in a min heap. It'll take O(logn) to insert and O(logn) to remove. ie. total: O(logn) + O(logn)
+
+Hence total TC: O(nlong) + O(logn) = O(logn), S: O(k) - storing the k elements in the heap
+Use python heapq
