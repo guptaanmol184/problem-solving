@@ -346,3 +346,9 @@ P: GIven the root of a binary tree, return the level order traversal of it's nod
 
 S: Do BFS
 T: O(n) | S: O(n) - stack space
+
+## 199 Binary Tree Right Side View
+P: Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+S: Do BFS and note down the node in the extreme right
+T: O(n) | S: O(n)
