@@ -352,3 +352,11 @@ P: Given the root of a binary tree, imagine yourself standing on the right side 
 
 S: Do BFS and note down the node in the extreme right
 T: O(n) | S: O(n)
+
+## 1448 Count Good nodes in binary tree
+P: Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
+
+Return the number of good nodes in the binary tree.
+
+S: Do DFS, update the max when moving down the tree and update the global count if the node is a good node.
+T: O(n) | S: O(n)
