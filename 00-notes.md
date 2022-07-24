@@ -340,3 +340,9 @@ Use python heapq
 P: Given a robot starting at origin and a set of instructions, "G" to go forward, "L" to turn left, "R" to turn right. The robot repeats the instructions in an infinite loop. Find if the robot will forever remain inside a finite radius circle or not ? Return bool.
 
 S: Go through each instruction, based on it update the robot's direction and position. Check if the robot is still at the origin or it's direction is not the starting direction.
+
+## 102 binary tree level order traversal
+P: GIven the root of a binary tree, return the level order traversal of it's node values
+
+S: Do BFS
+T: O(n) | S: O(n) - stack space
