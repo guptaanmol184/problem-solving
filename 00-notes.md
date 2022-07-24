@@ -335,3 +335,8 @@ Add: Since we are inserting and removing in a min heap. It'll take O(logn) to in
 
 Hence total TC: O(nlong) + O(logn) = O(logn), S: O(k) - storing the k elements in the heap
 Use python heapq
+
+## 1041 Robot Bounded In Circle
+P: Given a robot starting at origin and a set of instructions, "G" to go forward, "L" to turn left, "R" to turn right. The robot repeats the instructions in an infinite loop. Find if the robot will forever remain inside a finite radius circle or not ? Return bool.
+
+S: Go through each instruction, based on it update the robot's direction and position. Check if the robot is still at the origin or it's direction is not the starting direction.
