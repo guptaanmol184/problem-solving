@@ -360,3 +360,11 @@ Return the number of good nodes in the binary tree.
 
 S: Do DFS, update the max when moving down the tree and update the global count if the node is a good node.
 T: O(n) | S: O(n)
+
+## 2 Add Two Numbers
+P: You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+S: Use 3 pointers, to track the first 2 numbers and the resultant sum. Use s and c variables to keep track of sum and carry in each operation.
+T: O(n) | S: O(1) -> s and c
