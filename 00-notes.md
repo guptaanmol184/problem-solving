@@ -337,23 +337,27 @@ Hence total TC: O(nlong) + O(logn) = O(logn), S: O(k) - storing the k elements i
 Use python heapq
 
 ## 1041 Robot Bounded In Circle
+Sunday (24/07)
 P: Given a robot starting at origin and a set of instructions, "G" to go forward, "L" to turn left, "R" to turn right. The robot repeats the instructions in an infinite loop. Find if the robot will forever remain inside a finite radius circle or not ? Return bool.
 
 S: Go through each instruction, based on it update the robot's direction and position. Check if the robot is still at the origin or it's direction is not the starting direction.
 
 ## 102 binary tree level order traversal
+Sunday (24/07)
 P: GIven the root of a binary tree, return the level order traversal of it's node values
 
 S: Do BFS
 T: O(n) | S: O(n) - stack space
 
 ## 199 Binary Tree Right Side View
+Sunday (24/07)
 P: Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 
 S: Do BFS and note down the node in the extreme right
 T: O(n) | S: O(n)
 
 ## 1448 Count Good nodes in binary tree
+Sunday (24/07)
 P: Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
 
 Return the number of good nodes in the binary tree.
@@ -362,9 +366,25 @@ S: Do DFS, update the max when moving down the tree and update the global count 
 T: O(n) | S: O(n)
 
 ## 2 Add Two Numbers
+Sunday (24/07)
 P: You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
 S: Use 3 pointers, to track the first 2 numbers and the resultant sum. Use s and c variables to keep track of sum and carry in each operation.
 T: O(n) | S: O(1) -> s and c
+
+## 98 Validate Binary Search Tree
+Monday (25/07)
+P: Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+
+A valid BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+S: Do DFS, tracking the max and min values on the subtree. Use this to deduce if the root is greater than all the left subtree values and root is lesser than all the right subtree values. Recursively check if left and right subtrees are also valid BSTs.
+T: O(n) | S: O(logn) or O(n) - stack space, O(n) worst case
+
+Neetcode solution is simpler and easier to understand. It is top down approach for keep track of the bounds the value of the current node should be in.
