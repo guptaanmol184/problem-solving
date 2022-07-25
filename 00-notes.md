@@ -388,3 +388,11 @@ S: Do DFS, tracking the max and min values on the subtree. Use this to deduce if
 T: O(n) | S: O(logn) or O(n) - stack space, O(n) worst case
 
 Neetcode solution is simpler and easier to understand. It is top down approach for keep track of the bounds the value of the current node should be in.
+
+## 78 Subsets
+Monday (25/07)
+
+P: Given an integer array nums of unique elements, return all possible subsets (the power set).
+
+S: Do DFS, and choose once to include the element and once to not include the element.
+T: O(2^n) | S: O(n) - to track the solution in a single list (or) O(2^n) if considering space for answer as well
