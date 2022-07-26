@@ -407,3 +407,17 @@ P: Given a binary tree, find the lowest common ancestor (LCA) of two given nodes
 S: Relates to 235, but a binary tree. Do DFS and keep track of p, q being seen on the left and right subtree.
 Use this information to identify if the lowest common ancestor has been found if both p and q have been seen.
 T: O(n) | S: O(logn) or O(n) in worst case
+
+## 155 Min Stack [S]
+P: Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+Implement the MinStack class:
+
+MinStack() initializes the stack object.
+void push(int val) pushes the element val onto the stack.
+void pop() removes the element on the top of the stack.
+int top() gets the top element of the stack.
+int getMin() retrieves the minimum element in the stack.
+You must implement a solution with O(1) time complexity for each function.
+
+S: Use the constraint that what you are implementing a stack, hence the operations would only be push, pop, top and nothing else and think how can the min be tracked with the operation.
