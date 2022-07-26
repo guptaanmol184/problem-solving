@@ -389,6 +389,8 @@ T: O(n) | S: O(logn) or O(n) - stack space, O(n) worst case
 
 Neetcode solution is simpler and easier to understand. It is top down approach for keep track of the bounds the value of the current node should be in.
 
+Backtracking - Generally needs a tracking of the index, bitmask being constructed, the list of nums and the list of results to append the solution to.
+
 ## 78 Subsets
 Monday (25/07)
 
@@ -396,3 +398,12 @@ P: Given an integer array nums of unique elements, return all possible subsets (
 
 S: Do DFS, and choose once to include the element and once to not include the element.
 T: O(2^n) | S: O(n) - to track the solution in a single list (or) O(2^n) if considering space for answer as well
+
+## 236 Lowest Common Ancestor Of A Binary Tree
+Tuesday (26/07)
+
+P: Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+
+S: Relates to 235, but a binary tree. Do DFS and keep track of p, q being seen on the left and right subtree.
+Use this information to identify if the lowest common ancestor has been found if both p and q have been seen.
+T: O(n) | S: O(logn) or O(n) in worst case
