@@ -409,6 +409,8 @@ Use this information to identify if the lowest common ancestor has been found if
 T: O(n) | S: O(logn) or O(n) in worst case
 
 ## 155 Min Stack [S]
+Tuesday (26/07)
+
 P: Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 Implement the MinStack class:
@@ -421,3 +423,16 @@ int getMin() retrieves the minimum element in the stack.
 You must implement a solution with O(1) time complexity for each function.
 
 S: Use the constraint that what you are implementing a stack, hence the operations would only be push, pop, top and nothing else and think how can the min be tracked with the operation.
+
+## 150 Evaluate Reverse Polish Notation[S]
+P: Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+
+Valid operators are +, -, *, and /. Each operand may be an integer or another expression.
+
+Note that division between two integers should truncate toward zero.
+
+It is guaranteed that the given RPN expression is always valid. That means the expression would always evaluate to a result, and there will not be any division by zero operation.
+
+S: Use stack
+T: O(n) | S: O(n/2)
+*: Learn how to perform division while truncating output to 0. Basically to float division and ignore the value after decimal.
