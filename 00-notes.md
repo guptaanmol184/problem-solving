@@ -448,3 +448,14 @@ S: Use a stack for DFS, and add nodes to linked list.
 T: O(n) | S: O(logn), worst O(n)
 
 Neetcode has good approach
+
+## 22 Generate Parentheses
+Wednesday (27/07)
+
+P: Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+S: Bruteforce - Generate all possible parentheses, then check if they are valid.
+T: O(2^n) | S: O(n)
+
+S: Neetcode: Backtrack, using open paren count and closed paren count in the output. Don't follow through for any invalid condition. Once open paren count == closed parent count == n, add to result.
+T: ??
