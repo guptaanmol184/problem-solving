@@ -425,6 +425,8 @@ You must implement a solution with O(1) time complexity for each function.
 S: Use the constraint that what you are implementing a stack, hence the operations would only be push, pop, top and nothing else and think how can the min be tracked with the operation.
 
 ## 150 Evaluate Reverse Polish Notation[S]
+Tuesday (26/07)
+
 P: Evaluate the value of an arithmetic expression in Reverse Polish Notation.
 
 Valid operators are +, -, *, and /. Each operand may be an integer or another expression.
@@ -436,3 +438,13 @@ It is guaranteed that the given RPN expression is always valid. That means the e
 S: Use stack
 T: O(n) | S: O(n/2)
 *: Learn how to perform division while truncating output to 0. Basically to float division and ignore the value after decimal.
+
+## 114 Flatten Binary Tree To Linked List[S]
+Wednesday (27/07)
+
+P: Given the root of a binary tree, flatten the tree into a "linked list". This should be done in pre order traversal.
+
+S: Use a stack for DFS, and add nodes to linked list.
+T: O(n) | S: O(logn), worst O(n)
+
+Neetcode has good approach
