@@ -459,3 +459,22 @@ T: O(2^n) | S: O(n)
 
 S: Neetcode: Backtrack, using open paren count and closed paren count in the output. Don't follow through for any invalid condition. Once open paren count == closed parent count == n, add to result.
 T: ??
+
+## 739 Daily Temperatures [S]
+P: Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
+
+S: Brute Force
+T: O(n^2) | S: O(1)
+
+S: Monotonic stack
+So, the logic here is that when you see a smaller element you can add it on the top of the stack, since it's not greater. But as you keep on going, when you see a larger element, you keep popping out of the stack all the elements that are smaller than the larger element and update it's value. This helps because, the next greater element is inherently stackish, where one value would be greater for one previous value but not all. And then we remember the current value that's smallest on the top of the stack and look for new values in the array that can pop the current smallest value.
+
+Approach:
+- Remembering the index at which we had seen a value
+- Calculating the next largest value for all the values on top of the stack that are smaller than the current value (this is possible because a single larger value can be greater for multiple values). This is possible due to remembering the index
+- Use stack because if we find a larger value, it may not be the largest for all the values but a subset of values on the top of the stack.
+- Keep doing this, and you can find the next largest element for all the elements.
+
+Note: Next smallest element needs a monotonically increasing stack
+Note: Next greatest element needs a monotonically decreasing stack
+T: O(n) | S: O(n)
