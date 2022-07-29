@@ -478,3 +478,13 @@ Approach:
 Note: Next smallest element needs a monotonically increasing stack
 Note: Next greatest element needs a monotonically decreasing stack
 T: O(n) | S: O(n)
+
+## 890 Find And Replace Pattern
+P: Given a list of strings words and a string pattern, return a list of words[i] that match pattern. You may return the answer in any order.
+
+A word matches the pattern if there exists a permutation of letters p so that after replacing every letter x in the pattern with p(x), we get the desired word.
+
+Recall that a permutation of letters is a bijection from letters to letters: every letter maps to another letter, and no two letters map to the same letter.
+
+S: Use 2 maps to check for bijective mapping.
+T: O(p) for each word. | O(p) - 2 dictionaries of size p
