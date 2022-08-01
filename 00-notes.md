@@ -503,3 +503,9 @@ A string a from words1 is universal if for every string b in words2, b is a subs
 Return an array of all the universal strings in words1. You may return the answer in any order.
 
 S: Since the universal string should cater to all words in word2. Take the union of the requirements for all word2 words and check with all word1 words to find the solution set.
+
+## 62 Unique Paths
+P: Given a m x n matrix, find the number of ways to move from (0, 0) to (m-1, n-1) if only right and down moves are possible.
+
+S: Use combinatorics
+T: O(1)
