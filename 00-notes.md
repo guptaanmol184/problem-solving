@@ -533,3 +533,12 @@ O(N) One pass for all cars from the end to start (another direction also works).
 O(N) Space for sorted cars.
 O(1) space is possible if we sort pos inplace.
 Best explanation: https://leetcode.com/problems/car-fleet/discuss/139850/C%2B%2BJavaPython-Straight-Forward
+
+## 1710 Maximum Units On a Truck
+Monday (01/08)
+
+P: Read the question
+
+S: Greedy solution
+Sorting O(nlogn) and then traversing the array for the maximum units, O(n)
+T: O(nlogn) | S: O(1)
