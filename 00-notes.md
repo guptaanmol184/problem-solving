@@ -504,8 +504,32 @@ Return an array of all the universal strings in words1. You may return the answe
 
 S: Since the universal string should cater to all words in word2. Take the union of the requirements for all word2 words and check with all word1 words to find the solution set.
 
-## 62 Unique Paths
+## 62 Unique Paths [S]
+Monday (01/08)
 P: Given a m x n matrix, find the number of ways to move from (0, 0) to (m-1, n-1) if only right and down moves are possible.
 
 S: Use combinatorics
 T: O(1)
+
+## 853 Car Fleet
+Monday (01/08)
+P: Read description
+S:
+Sort cars by the start positions pos
+Loop on each car from the end to the beginning
+Calculate its time needed to arrive the target
+cur records the current biggest time (the slowest)
+
+If another car needs less or equal time than cur,
+it can catch up this car fleet.
+
+If another car needs more time,
+it will be the new slowest car,
+and becomes the new lead of a car fleet.
+T: 
+O(NlogN) Quick sort the cars by position. (Other sort can be applied)
+O(N) One pass for all cars from the end to start (another direction also works).
+
+O(N) Space for sorted cars.
+O(1) space is possible if we sort pos inplace.
+Best explanation: https://leetcode.com/problems/car-fleet/discuss/139850/C%2B%2BJavaPython-Straight-Forward
