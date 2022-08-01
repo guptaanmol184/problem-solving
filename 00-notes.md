@@ -461,6 +461,7 @@ S: Neetcode: Backtrack, using open paren count and closed paren count in the out
 T: ??
 
 ## 739 Daily Temperatures [S]
+Thursday (28/07)
 P: Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
 
 S: Brute Force
@@ -480,6 +481,7 @@ Note: Next greatest element needs a monotonically decreasing stack
 T: O(n) | S: O(n)
 
 ## 890 Find And Replace Pattern
+Friday (29/07)
 P: Given a list of strings words and a string pattern, return a list of words[i] that match pattern. You may return the answer in any order.
 
 A word matches the pattern if there exists a permutation of letters p so that after replacing every letter x in the pattern with p(x), we get the desired word.
@@ -488,3 +490,16 @@ Recall that a permutation of letters is a bijection from letters to letters: eve
 
 S: Use 2 maps to check for bijective mapping.
 T: O(p) for each word. | O(p) - 2 dictionaries of size p
+
+## 916 Word Subsets
+Saturday (30/07)
+P: You are given two string arrays words1 and words2.
+
+A string b is a subset of string a if every letter in b occurs in a including multiplicity.
+
+For example, "wrr" is a subset of "warrior" but is not a subset of "world".
+A string a from words1 is universal if for every string b in words2, b is a subset of a.
+
+Return an array of all the universal strings in words1. You may return the answer in any order.
+
+S: Since the universal string should cater to all words in word2. Take the union of the requirements for all word2 words and check with all word1 words to find the solution set.
