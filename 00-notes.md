@@ -560,3 +560,10 @@ O(n log(k))
 
 S: Using binary search
 Look on leetcode to revisit the solution
+
+## 1629 Slowest Key
+Tuesday (02/08)
+
+P: Read the question
+S: Linearly traverse through the array keeping a track on the maximum duration and the corresponding lexicographically maximum key.
+T: O(n) | S: O(1)
