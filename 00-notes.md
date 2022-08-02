@@ -542,3 +542,21 @@ P: Read the question
 S: Greedy solution
 Sorting O(nlogn) and then traversing the array for the maximum units, O(n)
 T: O(nlogn) | S: O(1)
+
+## 378 Kth smallest element in a sorted matrix [S]
+Tuesday (02/08)
+Ref: https://www.techiedelight.com/find-kth-smallest-element-array/
+
+P: Read the question
+
+S: Using min heap
+Create a min heap and remove k-1 elements. You will remain with the kth smallest element as the root.
+T: O(n + k log(n))
+
+S: Using max heap of size k
+Create a max heap of size k, keep updating each element one my one while ensuring the size to always remain as k.
+The root node will be the kth smallest element.
+O(n log(k))
+
+S: Using binary search
+Look on leetcode to revisit the solution
