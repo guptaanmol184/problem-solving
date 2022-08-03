@@ -567,3 +567,9 @@ Tuesday (02/08)
 P: Read the question
 S: Linearly traverse through the array keeping a track on the maximum duration and the corresponding lexicographically maximum key.
 T: O(n) | S: O(1)
+
+## 729 My Calendar
+Wednesday (03/08)
+P: Read the question
+
+S: O(n^2) approach using brute force. O(nlogn) approach using trees.
