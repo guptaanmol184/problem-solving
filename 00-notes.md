@@ -578,3 +578,9 @@ S: O(n^2) approach using brute force. O(nlogn) approach using trees.
 P : Read the question
 
 S: Recursion with backtracking.
+
+## 300 Longest Increasing Subsequence
+P: Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+S: Use DP for caching and create the solution step by step
+T: O(n) | S: O(n)
