@@ -584,3 +584,12 @@ P: Given an integer array nums, return the length of the longest strictly increa
 
 S: Use DP for caching and create the solution step by step
 T: O(n) | S: O(n)
+
+## 49 Group Anagrams
+Tuesday (09/08)
+
+
+P: Given an list of strings. Group anagrams together.
+
+S: Use hashmap or a dictionary for the signature of each word.
+T: O(m * n)
