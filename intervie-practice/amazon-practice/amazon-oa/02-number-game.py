@@ -1,0 +1,1 @@
+def maxScore(nums: List[int]) -> int:

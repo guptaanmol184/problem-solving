@@ -67,7 +67,7 @@ class Solution:
             if c in ['(', '{', '[']:
                 stack.append(c)
             else:
-                if stack and
+                if (stack and
                    ((c == ')' and stack[-1] == '(')
                    or (c == ']' and stack[-1] == '[')
                    or (c == '}' and stack[-1] == '{'))):
