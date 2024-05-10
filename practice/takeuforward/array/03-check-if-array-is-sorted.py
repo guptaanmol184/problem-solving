@@ -13,6 +13,9 @@ def check(self, nums: List[int]) -> bool:
     
     return True
 
+# Learning:
+# Using module operation is powerful, since it automatically handles comparing the last element to the first element.
+# Else we have to do it manually, which you thought of.
 
 if __name__ == '__main__':
     assert True == check([1,2,3,4,5])
